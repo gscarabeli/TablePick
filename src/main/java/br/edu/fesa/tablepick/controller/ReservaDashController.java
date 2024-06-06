@@ -53,7 +53,7 @@ public class ReservaDashController {
     
     @FXML
     public void initialize() {
-        xAxis.setLabel("Hora");
+        xAxis.setLabel("Período");
         yAxis.setLabel("Reservas");
         
         btnVoltar.setOnAction(event -> voltar());

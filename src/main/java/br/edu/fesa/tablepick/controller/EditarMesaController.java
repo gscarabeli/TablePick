@@ -13,6 +13,7 @@ import br.edu.fesa.tablepick.model.Mesa;
 import br.edu.fesa.tablepick.dao.MesaDAO;
 import br.edu.fesa.tablepick.util.AlertaUtil;
 import java.io.IOException;
+import javafx.scene.input.KeyEvent;
 
 /**
  *
@@ -36,6 +37,8 @@ public class EditarMesaController {
     
     @FXML
     public void initialize() {
+        ValidarSomenteNumero(txtQtdLugares);
+        
         btnSalvar.setOnAction(event -> salvarEdicao());
         btnVoltar.setOnAction(event -> voltarConsultaMesa());
     }
@@ -67,5 +70,13 @@ public class EditarMesaController {
         } catch (IOException ex) {
             AlertaUtil.exibirAlerta("Erro ao abrir a tela de consulta de mesa.", Alert.AlertType.ERROR);
         }
+    }
+    
+    private void ValidarSomenteNumero(TextField textField) {
+        textField.addEventFilter(KeyEvent.KEY_TYPED, event -> {
+            if (!event.getCharacter().matches("\\d")) {
+                event.consume();
+            }
+        });
     }
 }

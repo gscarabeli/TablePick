@@ -51,28 +51,4 @@ public class Conexao {
             System.out.println("Conexão com a base encerrada.");
         }
     }
-    
-    /*public static Connection abrirConexao() {
-        Connection conexao = null;
-        try {
-            conexao = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Conexão com a base efetuada com sucesso.");
-        } catch (SQLException e) {
-            System.out.println("Falha na conexão com a base de dados.");
-            e.printStackTrace();
-        }
-        return conexao;
-    }
-
-    public static void fecharConexao(Connection conexao) {
-        if (conexao != null) {
-            try {
-                conexao.close();
-                System.out.println("Conexão com a base encerrada.");
-            } catch (SQLException e) {
-                System.out.println("Falha ao fechar conexão ocm a base.");
-                e.printStackTrace();
-            }
-        }
-    }*/
 }

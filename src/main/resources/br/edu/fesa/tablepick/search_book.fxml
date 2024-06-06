@@ -22,11 +22,12 @@
                 <Button fx:id="btnPesquisar" layoutX="234.0" layoutY="52.0" prefHeight="41.0" prefWidth="112.0" styleClass="login-button" text="Pesquisar" />
             <TableView fx:id="tableView" layoutX="11.0" layoutY="112.0" prefHeight="376.0" prefWidth="339.0">
               <columns>
-                <TableColumn fx:id="colId" prefWidth="48.0" text="Reserva" />
-                <TableColumn fx:id="colStatus" prefWidth="72.0" text="Status" />
-                <TableColumn fx:id="colData" prefWidth="71.0" text="Data" />
-                <TableColumn fx:id="colMesa" prefWidth="51.0" text="Mesa" />
-                <TableColumn fx:id="colAcoes" prefWidth="96.0" text="Ações" />
+                <TableColumn fx:id="colId" prefWidth="25.0" text="Reserva" />
+                <TableColumn fx:id="colStatus" prefWidth="64.0" text="Status" />
+                <TableColumn fx:id="colData" prefWidth="77.0" text="Data" />
+                <TableColumn fx:id="colMesa" prefWidth="34.0" text="Mesa" />
+                <TableColumn fx:id="colPessoas" prefWidth="48.0" text="Pessoas" />
+                <TableColumn fx:id="colAcoes" prefWidth="90.0" text="Ações" />
               </columns>
             </TableView>
             </children>

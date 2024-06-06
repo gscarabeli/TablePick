@@ -15,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 
 /**
  *
@@ -48,6 +49,8 @@ public class EditarReservaController {
     
     @FXML
     public void initialize() {
+        ValidarSomenteNumero(txtQtdPessoas);
+        
         btnSalvar.setOnAction(event -> salvarEdicao());
         btnVoltar.setOnAction(event -> voltar());
     }
@@ -85,5 +88,13 @@ public class EditarReservaController {
         } catch (IOException ex) {
             AlertaUtil.exibirAlerta("Erro ao abrir tela de consulta de reserva.", Alert.AlertType.ERROR);
         }
+    }
+    
+    private void ValidarSomenteNumero(TextField textField) {
+        textField.addEventFilter(KeyEvent.KEY_TYPED, event -> {
+            if (!event.getCharacter().matches("\\d")) {
+                event.consume();
+            }
+        });
     }
 }

@@ -23,6 +23,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 
 /**
@@ -71,6 +72,8 @@ public class ConsultaMesaController {
     
      @FXML
     public void initialize() {
+        ValidarSomenteNumero(txtMesa);
+        
         btnPesquisar.setOnAction(event -> pesquisarMesa());
         btnGraficos.setOnAction(event -> abrirDashMesa());
         btnVoltarHub.setOnAction(event -> voltarHub());
@@ -186,5 +189,13 @@ public class ConsultaMesaController {
         } catch (IOException ex) {
             AlertaUtil.exibirAlerta("Erro ao abrir hub principal.", Alert.AlertType.ERROR);
         }
+    }
+    
+    private void ValidarSomenteNumero(TextField textField) {
+        textField.addEventFilter(KeyEvent.KEY_TYPED, event -> {
+            if (!event.getCharacter().matches("\\d")) {
+                event.consume();
+            }
+        });
     }
 }

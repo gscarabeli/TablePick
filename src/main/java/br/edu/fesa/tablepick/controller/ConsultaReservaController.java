@@ -25,6 +25,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
 
@@ -60,6 +61,9 @@ public class ConsultaReservaController {
 
     @FXML
     private TableColumn<Reserva, Integer> colMesa;
+    
+    @FXML
+    private TableColumn<Reserva, Integer> colPessoas;
 
     @FXML
     private TableColumn<Reserva, Void> colAcoes;
@@ -76,6 +80,8 @@ public class ConsultaReservaController {
     
     @FXML
     private void initialize() {
+        ValidarSomenteNumero(txtReserva);
+        
         btnPesquisar.setOnAction(event -> pesquisarReserva());
         btnGraficos.setOnAction(event -> abrirDashReserva());
         btnVoltarHub.setOnAction(event -> voltar());
@@ -84,6 +90,7 @@ public class ConsultaReservaController {
         colStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
         colData.setCellValueFactory(new PropertyValueFactory<>("dataReserva"));
         colMesa.setCellValueFactory(new PropertyValueFactory<>("idMesa"));
+        colPessoas.setCellValueFactory(new PropertyValueFactory<>("qtdPessoas"));
 
         colData.setCellFactory(column -> {
             return new TableCell<Reserva, LocalDateTime>() {
@@ -220,5 +227,13 @@ public class ConsultaReservaController {
         } catch (IOException ex) {
             AlertaUtil.exibirAlerta("Erro ao abrir hub principal.", Alert.AlertType.ERROR);
         }
+    }
+    
+    private void ValidarSomenteNumero(TextField textField) {
+        textField.addEventFilter(KeyEvent.KEY_TYPED, event -> {
+            if (!event.getCharacter().matches("\\d")) {
+                event.consume();
+            }
+        });
     }
 }
