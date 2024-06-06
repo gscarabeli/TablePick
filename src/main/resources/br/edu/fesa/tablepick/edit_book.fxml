@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="650.0" prefWidth="400.0" spacing="20.0" stylesheets="@../../../../css/edit_book.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fesa.tablepick.controller.EditarReservaController">
+    <children>
+        <Pane prefHeight="700.0" prefWidth="200.0">
+            <children>
+                <Label layoutX="45.0" layoutY="46.0" styleClass="welcome-label" text="EDITAR RESERVA?" />
+                <Label layoutX="48.0" layoutY="96.0" styleClass="instruction-label" text="Por favor, insira as informações da reserva!" />
+                <Label layoutX="23.0" layoutY="164.0" styleClass="input-label" text="Quantidade de Pessoas" />
+                <TextField fx:id="txtQtdPessoas" layoutX="23.0" layoutY="190.0" prefHeight="41.31" prefWidth="313.97" promptText="Digite o número aqui" styleClass="input-field" />
+                <Label layoutX="23.0" layoutY="250.0" styleClass="input-label" text="Nome" />
+                <TextField fx:id="txtNome" layoutX="23.0" layoutY="276.0" prefHeight="41.31" prefWidth="313.97" promptText="Digite seu nome" styleClass="input-field" />
+                <Label layoutX="24.0" layoutY="347.0" styleClass="input-label" text="Número de celular" />
+                <TextField fx:id="txtCelular" layoutX="23.0" layoutY="375.0" prefHeight="41.31" prefWidth="313.97" promptText="ex. 901234567" styleClass="input-field" />
+                <Button fx:id="btnSalvar" layoutX="23.0" layoutY="488.0" prefHeight="41.31" prefWidth="313.97" styleClass="login-button" text="Salvar Edição!" />
+                <Button fx:id="btnVoltar" layoutX="130.0" layoutY="555.0" prefHeight="41.0" prefWidth="100.0" styleClass="login-button" text="VOLTAR" />
+                <HBox alignment="CENTER" layoutX="76.0" layoutY="390.0" />
+            </children>
+        </Pane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="650.0" prefWidth="400.0" spacing="20.0" stylesheets="@../../../../css/search_book.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fesa.tablepick.controller.ConsultaReservaController">
+    <children>
+        <Pane prefHeight="700.0" prefWidth="200.0">
+            <children>
+                <Label layoutX="23.0" layoutY="20.0" styleClass="input-label" text="Número da Reserva" />
+                <TextField fx:id="txtReserva" layoutX="23.0" layoutY="52.0" maxWidth="195.0" minHeight="41.0" minWidth="100.0" prefHeight="41.0" prefWidth="195.0" promptText="Digite o número aqui" styleClass="input-field" />
+                <Button fx:id="btnGraficos" layoutX="110.0" layoutY="509.0" prefHeight="41.0" prefWidth="141.0" styleClass="login-button" text="Gráficos" />
+                <Button fx:id="btnVoltarHub" layoutX="130.0" layoutY="569.0" prefHeight="41.0" prefWidth="100.0" styleClass="login-button" text="VOLTAR" />
+                <HBox alignment="CENTER" layoutX="76.0" layoutY="390.0" />
+                <Button fx:id="btnPesquisar" layoutX="234.0" layoutY="52.0" prefHeight="41.0" prefWidth="112.0" styleClass="login-button" text="Pesquisar" />
+            <TableView fx:id="tableView" layoutX="11.0" layoutY="112.0" prefHeight="376.0" prefWidth="339.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="48.0" text="Reserva" />
+                <TableColumn fx:id="colStatus" prefWidth="72.0" text="Status" />
+                <TableColumn fx:id="colData" prefWidth="71.0" text="Data" />
+                <TableColumn fx:id="colMesa" prefWidth="51.0" text="Mesa" />
+                <TableColumn fx:id="colAcoes" prefWidth="96.0" text="Ações" />
+              </columns>
+            </TableView>
+            </children>
+        </Pane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

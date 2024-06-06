@@ -1,0 +1,99 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 8, 2024, 6:52:36 PM
+    Author     : Gustavo
+*/
+
+
+.welcome-label {
+    -fx-font-size: 34px;
+    -fx-text-fill: #333333;
+}
+
+.instruction-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+.input-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #666666;
+    -fx-alignment: baseline-left;
+}
+
+.input-field {
+    -fx-prompt-text-fill: #999999;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding-top: 8px;
+    -fx-padding-right: 20px;
+    -fx-min-width: 313.97px;
+    -fx-max-width: 313.97px;
+    -fx-min-height: 41.31px;
+    -fx-max-height: 41.31px;
+}
+
+.login-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #EA454C;
+    -fx-padding-top: 8px;
+    -fx-padding-top: 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.small-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #666666;
+}
+
+.link-button {
+    -fx-font-size: 12px;
+    -fx-text-fill: #EA454C;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.toggle-button:selected .graphic {
+    -fx-background-color: transparent;
+}
+
+.toggle-button .graphic {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.toggle-button:selected .graphic {
+    -fx-background-color: transparent;
+}
+
+.toggle-button:selected .graphic > ImageView {
+    -fx-opacity: 0.7;
+}
+
+.toggle-button .graphic > ImageView {
+    -fx-opacity: 1.0;
+}
+
+.toggle-button:selected .graphic > ImageView {
+    -fx-opacity: 0.7;
+}

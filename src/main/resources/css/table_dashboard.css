@@ -1,0 +1,27 @@
+.welcome-label {
+    -fx-font-size: 34px;
+    -fx-text-fill: #333333;
+}
+
+.instruction-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+.login-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #EA454C;
+    -fx-padding-top: 8px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.pie-chart {
+    -fx-background-color: transparent;
+}
+
+.pie-chart .chart-pie-label {
+    -fx-font-size: 14px;
+    -fx-fill: white;
+}

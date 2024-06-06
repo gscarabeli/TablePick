@@ -1,0 +1,45 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 8, 2024, 6:52:36 PM
+    Author     : Gustavo
+*/
+
+
+.welcome-label {
+    -fx-font-size: 34px;
+    -fx-text-fill: #333333;
+}
+
+.instruction-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+.login-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #EA454C;
+    -fx-padding-top: 8px;
+    -fx-padding-top: 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.small-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #666666;
+}
+
+.link-button {
+    -fx-font-size: 12px;
+    -fx-text-fill: #EA454C;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}

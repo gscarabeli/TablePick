@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="680.0" prefWidth="400.0" spacing="20.0" stylesheets="@../../../../css/sign_up.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fesa.tablepick.controller.CadastroController">
+    <children>
+        <Pane prefHeight="700.0" prefWidth="200.0">
+            <children>
+                <Label layoutX="84.0" layoutY="22.0" styleClass="welcome-label" text="BEM VINDO!" />
+                <Label layoutX="75.0" layoutY="72.0" styleClass="instruction-label" text="Por favor, insira suas informações!" />
+                <Label layoutX="23.0" layoutY="134.0" styleClass="input-label" text="Nome" />
+                <TextField fx:id="txtNome" layoutX="23.0" layoutY="159.0" prefHeight="41.31" prefWidth="313.97" promptText="Entre com seu nome" styleClass="input-field" />
+                <Label layoutX="23.0" layoutY="223.0" styleClass="input-label" text="E-mail" />
+                <TextField fx:id="txtEmail" layoutX="23.0" layoutY="248.0" prefHeight="41.31" prefWidth="313.97" promptText="Entre com seu e-mail" styleClass="input-field" />
+                <Label layoutX="23.0" layoutY="310.0" styleClass="input-label" text="Credencial" />
+                <TextField fx:id="txtCredencial" layoutX="23.0" layoutY="335.0" prefHeight="41.31" prefWidth="313.97" promptText="Entre com sua credencial" styleClass="input-field" />
+                <HBox alignment="CENTER" layoutX="76.0" layoutY="390.0" />
+                <Label layoutX="23.0" layoutY="399.0" styleClass="input-label" text="Senha" />
+                <PasswordField fx:id="txtSenha" layoutX="23.0" layoutY="424.0" promptText="Entre com sua senha" styleClass="input-field" />
+                <TextField fx:id="txtSenhaExibir" layoutX="23.0" layoutY="424.0" promptText="Entre com sua senha" styleClass="input-field" visible="false" />
+                <ToggleButton fx:id="btnExibirSenha" layoutX="300.0" layoutY="427.0" prefHeight="35.0" prefWidth="27.0" />
+                <Label layoutX="24.0" layoutY="488.0" styleClass="input-label" text="Confirme sua senha" />
+                <PasswordField fx:id="txtSenhaConfirmacao" layoutX="23.0" layoutY="510.0" promptText="Confirme sua senha" styleClass="input-field" />
+                <TextField fx:id="txtSenhaConfirmacaoExibir" layoutX="23.0" layoutY="510.0" styleClass="input-field" promptText="Confirme sua senha" visible="false" />
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="303.0" layoutY="435.0" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../images/olho_aberto.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnCadastrar" layoutX="23.0" layoutY="591.0" prefHeight="41.31" prefWidth="313.97" styleClass="login-button" text="Cadastrar" />
+                <ToggleButton fx:id="btnExibirConfirmacaoSenha" layoutX="303.0" layoutY="513.0" prefHeight="35.0" prefWidth="27.0" />
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="303.0" layoutY="521.0" preserveRatio="true">
+                <image>
+                    <Image url="@../../../../images/olho_aberto.png" />
+                </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
