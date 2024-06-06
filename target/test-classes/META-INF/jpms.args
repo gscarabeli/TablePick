@@ -1,0 +1,4 @@
+--patch-module
+br.edu.fesa.tablepick=_
+--add-reads
+br.edu.fesa.tablepick=ALL-UNNAMED

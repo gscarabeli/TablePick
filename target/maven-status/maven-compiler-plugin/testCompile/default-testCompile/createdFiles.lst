@@ -1,0 +1,3 @@
+br\edu\fesa\tablepick\model\test\PasswordValidationTest.class
+br\edu\fesa\tablepick\model\test\EmailValidationTest.class
+br\edu\fesa\tablepick\model\test\FieldsEmptyValidationTest.class

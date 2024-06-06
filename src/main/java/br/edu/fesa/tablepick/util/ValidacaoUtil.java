@@ -22,4 +22,8 @@ public class ValidacaoUtil {
     public static boolean validaSenha(String senha) {
         return Pattern.matches(SENHA_REGEX, senha);
     }
+    
+    public static boolean isCampoVazio(String campo) {
+        return campo == null || campo.trim().isEmpty();
+    }
 }
