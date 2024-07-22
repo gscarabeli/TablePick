@@ -33,5 +33,4 @@ Os componentes utilizados para este projeto foram:
 
 * Matheus Galdino Xavier
 
-* Link do Vídeo Demonstrativo (Em Inglês): 
-
+* Link do Vídeo De Apresentação do Projeto (Em Inglês): https://youtu.be/B4p3lttlkVA
