@@ -1,32 +1,37 @@
-🍽️ TablePick - Sistema de Gerenciamento de Mesas para Restaurantes 🍽️
+# 🍽️ TablePick - Sistema de Gerenciamento de Mesas para Restaurantes 🍽️
+
 O TablePick é um projeto desenvolvido em Java utilizando JavaFX para a interface gráfica e CSS para a estilização. O objetivo deste projeto é auxiliar restaurantes na organização e manutenção das mesas, oferecendo funcionalidades para otimizar o gerenciamento de mesas e melhorar a experiência dos clientes.
 
-🔧 Funcionalidades:
-Cadastro de Mesas: Permite adicionar novas mesas ao sistema com informações detalhadas.
-Edição de Mesas: Modifique os dados das mesas existentes, como número da mesa, capacidade, etc.
-Controle de Disponibilidade: Gerencie a disponibilidade das mesas, marcando-as como ocupadas ou livres.
-Controle de Fluxo de Chamada: Administre o fluxo de chamadas das mesas para as senhas de espera dos clientes.
-Estatísticas de Uso: Visualize gráficos que mostram a frequência de uso das mesas para ajudar na análise de padrões.
+## 🔧 Funcionalidades:
+Os componentes utilizados para este projeto foram:
 
-🔧 Tecnologias Utilizadas:
-Java: Linguagem de programação principal.
-JavaFX: Framework para construção da interface gráfica.
-CSS: Estilização da interface para uma melhor experiência do usuário.
-⚡ Diagrama de Arquitetura:
+* Cadastro de Mesas: Permite adicionar novas mesas ao sistema com informações detalhadas.
 
-📋 Manual de Operação:
-Para iniciar o sistema, execute o arquivo JAR gerado e a interface gráfica será carregada. A partir daí, você poderá cadastrar novas mesas, editar informações existentes, gerenciar a disponibilidade das mesas e visualizar as estatísticas de uso.
+* Edição de Mesas: Modifique os dados das mesas existentes, como número da mesa, capacidade, etc.
 
-🤝 Integrantes do Projeto:
+* Controle de Disponibilidade: Gerencie a disponibilidade das mesas, marcando-as como ocupadas ou livres.
+  
+* Controle de Fluxo de Chamada: Administre o fluxo de chamadas das mesas para as senhas de espera dos clientes.
+  
+* Estatísticas de Uso: Visualize gráficos que mostram a frequência de uso das mesas para ajudar na análise de padrões.
 
-Adriana Monteiro Martani
 
-Davi Teramoto Matheus
+## 🔧 Tecnologias Utilizadas:
+* Java: Linguagem de programação principal.
+* JavaFX: Framework para construção da interface gráfica.
+* CSS: Estilização da interface para uma melhor experiência do usuário.
 
-Gustavo Correia Scarabeli
+### 🤝 Integrantes do Projeto:
 
-Leonardo de Carlos Rodrigues
+* Adriana Monteiro Martani
 
-Matheus Galdino Xavier
+* Davi Teramoto Matheus
 
-Link do Vídeo Demonstrativo: 
+* Gustavo Correia Scarabeli
+
+* Leonardo de Carlos Rodrigues
+
+* Matheus Galdino Xavier
+
+* Link do Vídeo Demonstrativo (Em Inglês): 
+
